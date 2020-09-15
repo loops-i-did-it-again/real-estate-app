@@ -7,7 +7,7 @@ class CreateProperties < ActiveRecord::Migration[6.0]
       t.integer :bedrooms
       t.float :bathrooms
       t.integer :floors
-      t.boolean :availability
+      t.boolean :availability, default: true
       t.decimal :price, precision: 9, scale: 2
       t.float :latitude
       t.float :longitude
